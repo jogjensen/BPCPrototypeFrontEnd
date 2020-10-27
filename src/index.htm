@@ -9,21 +9,47 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+  <script src="bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS.css">
 
-  <title>Hello app</title>
+  <!-- <style>
+  @import url('/MyCSS.css');
+</style> -->
+
+  <title>Bookpilotcar</title>
 </head>
 
 <body>
-  <h1>Hello</h1>
-  <div id="app">
-    <input v-model="name" placeholder="Name">
-    <button v-on:click="sayHello()" class="btn btn-primary">Say hello</button>
-    <div>{{ greeting }}</div>
+
+    <!-- Menu start -->
+  <header class="style">
+    <div class="container-fluid">
+      <h1>Bookpilotcar</h1>
+      <p>We are the future</p>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <nav>
+      <ul class="custom2">
+        <div class="row">
+          <button class="MyBtnStyle" onclick="document.location='Index.html'">Homepage</button>
+          <button class="MyBtnStyle" onclick="document.location='MyCV.html'">Test</button>
+          <button class="MyBtnStyle" onclick="document.location='contactus.html'">Contact us</button>
+        </div>
+      </ul>
+    </nav>
+  </div>
+  <!--Menu end-->
+
+  <div>
+    <h2>Her skal stå noget godt</h2>
+    <button class="MyBtnStyle2" onclick="document.location='login.html'">Book Nu</button>
+
   </div>
 
-  <script src="bundle.js"></script>
+
 </body>
 
 </html>

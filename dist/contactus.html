@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS.css">
+
+  <!-- <style>
+  @import url('/MyCSS.css');
+</style> -->
+
+  <title>Bookpilotcar</title>
+</head>
+
+<body>
+
+    <!-- Menu start -->
+  <header class="style">
+    <div class="container-fluid">
+      <h1>Bookpilotcar</h1>
+      <p>We are the future</p>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <nav>
+      <ul class="custom2">
+        <div class="row">
+          <button class="MyBtnStyle" onclick="document.location='Index.htm'">Homepage</button>
+          <button class="MyBtnStyle" onclick="document.location='MyCV.html'">Test</button>
+          <button class="MyBtnStyle" onclick="document.location='ContactMe.html'">Contact us</button>
+        </div>
+      </ul>
+    </nav>
+  </div>
+  <!--Menu end-->
+
+  <div class="ContainerContactMe">
+    <form action="/Min hjemmeside/Submits.txt">
+        <label for="Fname">First name</label>
+        <input type="text" id="Fname" name="firstname" placeholder="Your name..">
+      <p></p>
+        <label for="Lname">Last Name</label>
+        <input type="text" id="Lname" name="lastname" placeholder="Your last name..">
+<p></p>
+        <label for="Email">Email</label>
+        <input type="text" id="Email" name="Email" placeholder="Your Email...">
+<p></p>
+        <label for="TelephoneNumber">Telephone number</label>
+        <input type="text" id="TelephoneNumber" name="Telephone number" placeholder="Your telephonenumber">
+<p></p>
+        <label for="HSICY">How should i contact you?</label>
+        <select id="HSICY" name="HSICY">
+            <option value="Email">Email</option>
+            <option value="Telephone">Telephone</option>
+        </select>
+<p></p>
+        <label for="Subject">Subject</label>
+        <p></p>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+<p></p>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+
+</html>

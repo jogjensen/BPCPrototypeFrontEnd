@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS.css">
+
+  <!-- <style>
+  @import url('/MyCSS.css');
+</style> -->
+
+  <title>Bookpilotcar</title>
+</head>
+
+<body>
+
+  <!-- Menu start -->
+  <header class="style">
+    <div class="container-fluid">
+      <h1>Bookpilotcar</h1>
+      <p>We are the future</p>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <nav>
+      <ul class="custom2">
+        <div class="row">
+          <button class="MyBtnStyle" onclick="document.location='Index.htm'">Homepage</button>
+          <button class="MyBtnStyle" onclick="document.location='MyCV.html'">Test</button>
+          <button class="MyBtnStyle" onclick="document.location='contactus.html'">Contact us</button>
+        </div>
+      </ul>
+    </nav>
+  </div>
+  <!--Menu end-->
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-4">
+        <p>Start information</p>
+        <label class="bookingLabel" for="startAddress"><b>Start address</b></label>
+        <input class="booking" type="text" placeholder="Enter start address" name="startAddress" id="startAddress" required>
+
+        <label class="bookingLabel" for="startAddress"><b>Start time</b></label>
+        <input class="booking" type="text" placeholder="Enter start time" name="startAddress" id="startAddress" required>
+
+        <label class="bookingLabel" for="startAddress"><b>Start date</b></label>
+        <input class="booking" type="text" placeholder="Enter start date" name="startAddress" id="startAddress" required>
+
+
+
+      </div>
+
+
+      <div class="col-sm-4">
+        <p>End information</p>
+        <label class="bookingLabel" for="startAddress"><b>End address</b></label>
+        <input class="booking" type="text" placeholder="Enter end address" name="startAddress" id="startAddress" required>
+
+        <label class="bookingLabel" for="startAddress"><b>End time</b></label>
+        <input class="booking" type="text" placeholder="Enter end time" name="startAddress" id="startAddress" required>
+
+        <label class="bookingLabel" for="startAddress"><b>End date</b></label>
+        <input class="booking" type="text" placeholder="Enter end date" name="startAddress" id="startAddress" required>
+
+
+      </div>
+
+      <div class="col-sm-4">
+        <p>Generel</p>
+        <label class="bookingLabel" for="startAddress"><b>How many pilotcars is needed?</b></label>
+        <input class="booking" type="text" placeholder="Enter how many pilotcars needed for the job" name="startAddress" id="startAddress" required>
+
+        <label class="bookingLabel" for="startAddress"><b>What is being transported?</b></label>
+        <input class="booking" type="text" placeholder="e.g excavator/shed/vindmill parts" name="startAddress" id="startAddress" required>
+
+        <label class="bookingLabel" for="startAddress"><b>Comment</b></label>
+        <input class="booking" type="text" placeholder="Any comments about startaddress or end address" name="startAddress" id="startAddress" required>
+        
+        <hr>
+        
+        <input type="submit" value="Create Booking" onclick="document.location='CustomerView.html'">
+
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>
