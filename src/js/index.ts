@@ -3,7 +3,7 @@ import axios, {
     AxiosError
 } from "../../node_modules/axios/index"
 
-let baseUrl: string = "https://bpcprototyperest.azurewebsites.net/api/bookings"
+let baseUrl: string = "https://bpcprototyperest.azurewebsites.net/api/bookings/"
 
 interface Ibooking {
     ordNr: number
@@ -85,5 +85,5 @@ new Vue({
                 })
         },
     }
-}})
+},)
 

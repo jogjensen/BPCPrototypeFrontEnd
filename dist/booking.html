@@ -50,13 +50,13 @@
         <div class="col-sm-4">
           <p>Start information</p>
           <label class="bookingLabel" for="startAdr"><b>Start address</b></label>
-          <input class="booking" type="text" placeholder="Enter start address" name="startAdr" id="startAdr" required>
+          <input v-model="inputData.startAdr" class="booking" type="text" placeholder="Enter start address" name="startAdr" id="startAdr" required>
 
           <label class="bookingLabel" for="startTime"><b>Start time</b></label>
-          <input class="booking" type="text" placeholder="Enter start time" name="startTime" id="startTime" required>
+          <input v-model="inputData.startTime" class="booking" type="text" placeholder="Enter start time" name="startTime" id="startTime" required>
 
           <label class="bookingLabel" for="startDate"><b>Start date</b></label>
-          <input class="booking" type="text" placeholder="Enter start date" name="startDate" id="startDate" required>
+          <input v-model="inputData.startDate" class="booking" type="text" placeholder="Enter start date" name="startDate" id="startDate" required>
 
 
 
@@ -66,13 +66,13 @@
         <div class="col-sm-4">
           <p>End information</p>
           <label class="bookingLabel" for="endAddress"><b>End address</b></label>
-          <input class="booking" type="text" placeholder="Enter end address" name="endAdr" id="endAdr" required>
+          <input v-model="inputData.endAdr" class="booking" type="text" placeholder="Enter end address" name="endAdr" id="endAdr" required>
 
           <label class="bookingLabel" for="endTime"><b>End time</b></label>
-          <input class="booking" type="text" placeholder="Enter end time" name="endTime" id="endTime" required>
+          <input v-model="inputData.endTime" class="booking" type="text" placeholder="Enter end time" name="endTime" id="endTime" required>
 
           <label class="bookingLabel" for="endDate"><b>End date</b></label>
-          <input class="booking" type="text" placeholder="Enter end date" name="endDate" id="endDate" required>
+          <input v-model="inputData.endDate" class="booking" type="text" placeholder="Enter end date" name="endDate" id="endDate" required>
 
 
         </div>
@@ -80,21 +80,21 @@
         <div class="col-sm-4">
           <p>Generel</p>
           <label class="bookingLabel" for="numberOCN"><b>How many pilotcars is needed?</b></label>
-          <input class="booking" type="text" placeholder="Enter how many pilotcars needed for the job" name="numberOCN"
+          <input v-model="inputData.numberOCN" class="booking" type="text" placeholder="Enter how many pilotcars needed for the job" name="numberOCN"
             id="numberOCN" required>
 
           <label class="bookingLabel" for="typeOfGoods"><b>What is being transported?</b></label>
-          <input class="booking" type="text" placeholder="e.g excavator/shed/vindmill parts" name="typeOfGoods"
+          <input v-model="inputData.typeOfGoods" class="booking" type="text" placeholder="e.g excavator/shed/vindmill parts" name="typeOfGoods"
             id="typeOfGoods" required>
 
           <label class="bookingLabel" for="comments"><b>Comment</b></label>
-          <input class="booking" type="text" placeholder="Any comments about startaddress or end address"
+          <input v-model="inputData.comments" class="booking" type="text" placeholder="Any comments about startaddress or end address"
             name="comments" id="comments" required>
 
           <hr>
 
-          <input type="submit" value="Create Booking" v-on:click="addBooking()" onclick="document.location='CustomerView.html'">
-
+          <input type="submit" value="Create Booking" v-on:click="addBooking()">
+          {{addMessage}}
 
         </div>
 
@@ -103,6 +103,8 @@
 
 
     </div>
+
+
   </div>
 
   <script src="bundle.js"></script>
