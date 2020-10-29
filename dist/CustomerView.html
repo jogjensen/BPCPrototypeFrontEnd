@@ -18,73 +18,77 @@
 
 <body>
 
+  <div id="app">
+
     <!-- Menu start -->
-  <header class="style">
+    <header class="style">
+      <div class="container-fluid">
+        <h1>Bookpilotcar</h1>
+        <p>We are the future</p>
+      </div>
+    </header>
+
     <div class="container-fluid">
-      <h1>Bookpilotcar</h1>
-      <p>We are the future</p>
+      <nav>
+        <ul class="custom2">
+          <div class="row">
+            <button class="MyBtnStyle" onclick="document.location='Index.htm'">Homepage</button>
+            <button class="MyBtnStyle" onclick="document.location='customerJobs.html'">Current bookings</button>
+            <button class="MyBtnStyle" onclick="document.location='contactus.html'">Contact us</button>
+          </div>
+        </ul>
+      </nav>
     </div>
-  </header>
+    <!--Menu end-->
 
-  <div class="container-fluid">
-    <nav>
-      <ul class="custom2">
-        <div class="row">
-          <button class="MyBtnStyle" onclick="document.location='Index.htm'">Homepage</button>
-          <button class="MyBtnStyle" onclick="document.location='customerJobs.html'">Current bookings</button>
-          <button class="MyBtnStyle" onclick="document.location='contactus.html'">Contact us</button>
+    <h3 class="CustomerSite">Overview</h3>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="text1">My Menu</p>
+          <p>My information</p>
+          <p>Invoicing</p>
+          <p></p>
+          <p>Support</p>
         </div>
-      </ul>
-    </nav>
-  </div>
-  <!--Menu end-->
 
-<h3 class="CustomerSite">Overview</h3>
+        <div class="col-sm-4">
+          <p class="text1">New booking</p>
+          <p>Press here to create a new booking</p>
+          <button type="button" class="btn btn-success" onclick="document.location='booking.html'">New booking</button>
+          <p>If your booking is needed within 3 hours, please contact BPC by phone</p>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="text1">Jobs</p>
+          <table>
+            <thread>
+              <tr>
+                <th>Start adr</th>
+                <th>End adr</th>
+                <th>Status</th>
+                <th>More info</th>
+              </tr>
+            </thread>
+
+            <tr v-for="booking in bookings">
+              <td>{{booking.startAdr}}</td>
+              <td>{{booking.endAdr}}</td>
+              <td>Status</td>
+              <td>
+                <button onclick="document.location='customerJobs.html'" >More info</button>
+              </td>
+            </tr>
 
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="text1">My Menu</p>
-      <p>My information</p>
-      <p>Invoicing</p>
-      <p></p>
-      <p>Support</p>
-    </div>
+        </div>
 
-    <div class="col-sm-4">
-      <p class="text1">New booking</p>
-      <p>Press here to create a new booking</p>
-      <button type="button" class="btn btn-success" onclick="document.location='booking.html'">New booking</button>
-      <p>If your booking is needed within 3 hours, please contact BPC by phone</p>
-    </div>
-
-    <div class="col-sm-4">
-      <p class="text1">Jobs</p>
-      <table>
-        <tr>
-          <th>Start city</th>
-          <th>End city</th>
-          <th>Status</th>
-          <th>More info</th>
-        </tr>
-
-        <tr>
-          <td>Roskilde</td>
-          <td>Slagese</td>
-          <td>Status</td>
-          <td>
-            <button>More info</button>
-          </td>
-        </tr>
+      </div>
 
     </div>
-
-  </div>
-
-
-
-
+    <script src="bundle.js"></script>
 </body>
 
 </html>

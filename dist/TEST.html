@@ -21,6 +21,7 @@
 </head>
 
 <body>
+<div id="app">
 
     <!-- Menu start -->
   <header class="style">
@@ -46,9 +47,43 @@
   </div>
   <!--Menu end-->
 
+  <p>TEST AF REST</p>
 
+  <div class="container">
+    <table class="table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>ordNr</th>
+          <th>startAdr</th>
+          <th>startTime</th>
+          <th>startdate</th>
+          <th>endAdr</th>
+          <th>endTime</th>
+          <th>enddate</th>
+          <th>numberofcarsneed</th>
+          <th>typeofgoods</th>
+          <th>comments</th>
+        </tr>
+      </thead>
+      <tr v-for="booking in bookings">
+        <td>{{booking.ordNr}}</td>
+        <td>{{booking.startAdr}}</td>
+        <td>{{booking.startTime}}</td>
+        <td>{{booking.startDate}}</td>
+        <td>{{booking.endAdr}}</td>
+        <td>{{booking.endTime}}</td>
+        <td>{{booking.endDate}}</td>
+        <td>{{booking.numberOCN}}</td>
+        <td>{{booking.typeOfGoods}}</td>
+        <td>{{booking.comments}}</td>
+        
+     
+      </tr>
+    </table>
+  </div>
   
-
+</div>
+  <script src="bundle.js"></script>
 </body>
 
 </html>

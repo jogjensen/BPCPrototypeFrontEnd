@@ -21,87 +21,91 @@
 </head>
 
 <body>
+  <div id="app">
 
-  <!-- Menu start -->
-  <header class="style">
+    <!-- Menu start -->
+    <header class="style">
+      <div class="container-fluid">
+        <h1>Bookpilotcar</h1>
+        <p>We are the future</p>
+      </div>
+    </header>
+
     <div class="container-fluid">
-      <h1>Bookpilotcar</h1>
-      <p>We are the future</p>
+      <nav>
+        <ul class="custom2">
+          <div class="row">
+            <button class="MyBtnStyle" onclick="document.location='Index.htm'">Homepage</button>
+            <button class="MyBtnStyle" onclick="document.location='MyCV.html'">Test</button>
+            <button class="MyBtnStyle" onclick="document.location='contactus.html'">Contact us</button>
+          </div>
+        </ul>
+      </nav>
     </div>
-  </header>
+    <!--Menu end-->
 
-  <div class="container-fluid">
-    <nav>
-      <ul class="custom2">
-        <div class="row">
-          <button class="MyBtnStyle" onclick="document.location='Index.htm'">Homepage</button>
-          <button class="MyBtnStyle" onclick="document.location='MyCV.html'">Test</button>
-          <button class="MyBtnStyle" onclick="document.location='contactus.html'">Contact us</button>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Start information</p>
+          <label class="bookingLabel" for="startAdr"><b>Start address</b></label>
+          <input class="booking" type="text" placeholder="Enter start address" name="startAdr" id="startAdr" required>
+
+          <label class="bookingLabel" for="startTime"><b>Start time</b></label>
+          <input class="booking" type="text" placeholder="Enter start time" name="startTime" id="startTime" required>
+
+          <label class="bookingLabel" for="startDate"><b>Start date</b></label>
+          <input class="booking" type="text" placeholder="Enter start date" name="startDate" id="startDate" required>
+
+
+
         </div>
-      </ul>
-    </nav>
-  </div>
-  <!--Menu end-->
-
-  <div class="container-fluid">
-
-    <div class="row">
-      <div class="col-sm-4">
-        <p>Start information</p>
-        <label class="bookingLabel" for="startAddress"><b>Start address</b></label>
-        <input class="booking" type="text" placeholder="Enter start address" name="startAddress" id="startAddress" required>
-
-        <label class="bookingLabel" for="startAddress"><b>Start time</b></label>
-        <input class="booking" type="text" placeholder="Enter start time" name="startAddress" id="startAddress" required>
-
-        <label class="bookingLabel" for="startAddress"><b>Start date</b></label>
-        <input class="booking" type="text" placeholder="Enter start date" name="startAddress" id="startAddress" required>
 
 
+        <div class="col-sm-4">
+          <p>End information</p>
+          <label class="bookingLabel" for="endAddress"><b>End address</b></label>
+          <input class="booking" type="text" placeholder="Enter end address" name="endAdr" id="endAdr" required>
 
-      </div>
+          <label class="bookingLabel" for="endTime"><b>End time</b></label>
+          <input class="booking" type="text" placeholder="Enter end time" name="endTime" id="endTime" required>
 
-
-      <div class="col-sm-4">
-        <p>End information</p>
-        <label class="bookingLabel" for="startAddress"><b>End address</b></label>
-        <input class="booking" type="text" placeholder="Enter end address" name="startAddress" id="startAddress" required>
-
-        <label class="bookingLabel" for="startAddress"><b>End time</b></label>
-        <input class="booking" type="text" placeholder="Enter end time" name="startAddress" id="startAddress" required>
-
-        <label class="bookingLabel" for="startAddress"><b>End date</b></label>
-        <input class="booking" type="text" placeholder="Enter end date" name="startAddress" id="startAddress" required>
+          <label class="bookingLabel" for="endDate"><b>End date</b></label>
+          <input class="booking" type="text" placeholder="Enter end date" name="endDate" id="endDate" required>
 
 
-      </div>
+        </div>
 
-      <div class="col-sm-4">
-        <p>Generel</p>
-        <label class="bookingLabel" for="startAddress"><b>How many pilotcars is needed?</b></label>
-        <input class="booking" type="text" placeholder="Enter how many pilotcars needed for the job" name="startAddress" id="startAddress" required>
+        <div class="col-sm-4">
+          <p>Generel</p>
+          <label class="bookingLabel" for="numberOCN"><b>How many pilotcars is needed?</b></label>
+          <input class="booking" type="text" placeholder="Enter how many pilotcars needed for the job" name="numberOCN"
+            id="numberOCN" required>
 
-        <label class="bookingLabel" for="startAddress"><b>What is being transported?</b></label>
-        <input class="booking" type="text" placeholder="e.g excavator/shed/vindmill parts" name="startAddress" id="startAddress" required>
+          <label class="bookingLabel" for="typeOfGoods"><b>What is being transported?</b></label>
+          <input class="booking" type="text" placeholder="e.g excavator/shed/vindmill parts" name="typeOfGoods"
+            id="typeOfGoods" required>
 
-        <label class="bookingLabel" for="startAddress"><b>Comment</b></label>
-        <input class="booking" type="text" placeholder="Any comments about startaddress or end address" name="startAddress" id="startAddress" required>
-        
-        <hr>
-        
-        <input type="submit" value="Create Booking" onclick="document.location='CustomerView.html'">
+          <label class="bookingLabel" for="comments"><b>Comment</b></label>
+          <input class="booking" type="text" placeholder="Any comments about startaddress or end address"
+            name="comments" id="comments" required>
 
+          <hr>
+
+          <input type="submit" value="Create Booking" v-on:click="addBooking()" onclick="document.location='CustomerView.html'">
+
+
+        </div>
 
       </div>
+
+
 
     </div>
-
-
-
   </div>
 
-
-
+  <script src="bundle.js"></script>
 </body>
 
 </html>

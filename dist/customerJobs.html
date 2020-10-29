@@ -17,88 +17,65 @@
 </head>
 
 <body>
-
+  <div id="app">
     <!-- Menu start -->
-  <header class="style">
+    <header class="style">
+      <div class="container-fluid">
+        <h1>Bookpilotcar</h1>
+        <p>We are the future</p>
+      </div>
+    </header>
+
     <div class="container-fluid">
-      <h1>Bookpilotcar</h1>
-      <p>We are the future</p>
+      <nav>
+        <ul class="custom2">
+          <div class="row">
+            <button class="MyBtnStyle" onclick="document.location='Index.htm'">Homepage</button>
+            <button class="MyBtnStyle" onclick="document.location='customerView.html'">Overview</button>
+            <button class="MyBtnStyle" onclick="document.location='contactus.html'">Contact us</button>
+          </div>
+        </ul>
+      </nav>
     </div>
-  </header>
+    <!--Menu end-->
 
-  <div class="container-fluid">
-    <nav>
-      <ul class="custom2">
-        <div class="row">
-          <button class="MyBtnStyle" onclick="document.location='Index.htm'">Homepage</button>
-          <button class="MyBtnStyle" onclick="document.location='customerView.html'">Overview</button>
-          <button class="MyBtnStyle" onclick="document.location='contactus.html'">Contact us</button>
-        </div>
-      </ul>
-    </nav>
+    <h3 class="CustomerSite">Current bookings</h3>
+
+    <div class="container">
+      <table class="table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>ordNr</th>
+            <th>startAdr</th>
+            <th>startTime</th>
+            <th>startdate</th>
+            <th>endAdr</th>
+            <th>endTime</th>
+            <th>enddate</th>
+            <th>numberofcarsneed</th>
+            <th>typeofgoods</th>
+            <th>comments</th>
+          </tr>
+        </thead>
+        <tr v-for="booking in bookings">
+          <td>{{booking.ordNr}}</td>
+          <td>{{booking.startAdr}}</td>
+          <td>{{booking.startTime}}</td>
+          <td>{{booking.startDate}}</td>
+          <td>{{booking.endAdr}}</td>
+          <td>{{booking.endTime}}</td>
+          <td>{{booking.endDate}}</td>
+          <td>{{booking.numberOCN}}</td>
+          <td>{{booking.typeOfGoods}}</td>
+          <td>{{booking.comments}}</td>
+
+
+        </tr>
+      </table>
+    </div>
+
   </div>
-  <!--Menu end-->
-
-<h3 class="CustomerSite">Current bookings</h3>
-
-  <table>
-    <tr>
-      <th>Start City</th>
-      <th>Date & Time</th>
-      <th>End City</th>
-      <th>Type of goods</th>
-      <th>Status</th>
-      <th></th>
-    </tr>
-
-   
-    <tr>
-      <td>Roskilde</td>
-      <td>30/10/2020</td>
-      <td>Slagelse</td>
-      <td>Gravko</td>
-      <td>Accepted</td>
-      <td>
-        <button>More info</button>
-      </td>
-    </tr>
-
-    <tr>
-      <td>Ringsted</td>
-      <td>12/12/2020</td>
-      <td>Nykøbing Sj</td>
-      <td>Skur</td>
-      <td>Accepted</td>
-      <td>
-        <button>More info</button>
-      </td>
-    </tr>
-
-    <tr>
-      <td>Ishøj</td>
-      <td>27/10/2020</td>
-      <td>Odense</td>
-      <td>Vindmølle top</td>
-      <td>Accepted</td>
-      <td>
-        <button>More info</button>
-      </td>
-    </tr>
-    <tr>
-      <td>Århus</td>
-      <td>03/11/2020</td>
-      <td>Holbæk</td>
-      <td>Dumper</td>
-      <td>Waiting</td>
-      <td>
-        <button>More info</button>
-      </td>
-    </tr>
-   
-  </table>
-
-
-
+  <script src="bundle.js"></script>
 
 </body>
 
