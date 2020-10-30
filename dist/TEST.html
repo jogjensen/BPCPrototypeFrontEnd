@@ -21,68 +21,68 @@
 </head>
 
 <body>
-<div id="app">
+  <div id="app">
 
     <!-- Menu start -->
-  <header class="style">
-    <div class="container">
+    <header class="style">
+
       <img class="logo" src="122948844_1531929993656966_1404515904692755471_n.png" alt="LOGO">
       <div>
         <h1>Bookpilotcar</h1>
         <p>We are the future</p>
-      </div>
-    </div>
-  </header>
 
-  <div class="container-fluid">
-    <nav>
-      <ul class="custom2">
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <nav>
+        <ul class="custom2"></ul>
         <div class="row">
           <button class="MyBtnStyle" onclick="document.location='Index.htm'">Homepage</button>
           <button class="MyBtnStyle" onclick="document.location='MyCV.html'">Test</button>
           <button class="MyBtnStyle" onclick="document.location='contactus.html'">Contact us</button>
         </div>
-      </ul>
-    </nav>
-  </div>
-  <!--Menu end-->
+        </ul>
+      </nav>
+    </div>
+    <!--Menu end-->
 
-  <p>TEST AF REST</p>
+    <p>TEST AF REST</p>
 
-  <div class="container">
-    <table class="table-striped table-bordered table-hover">
-      <thead>
-        <tr>
-          <th>ordNr</th>
-          <th>startAdr</th>
-          <th>startTime</th>
-          <th>startdate</th>
-          <th>endAdr</th>
-          <th>endTime</th>
-          <th>enddate</th>
-          <th>numberofcarsneed</th>
-          <th>typeofgoods</th>
-          <th>comments</th>
+    <div class="container">
+      <table class="table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>ordNr</th>
+            <th>startAdr</th>
+            <th>startTime</th>
+            <th>startdate</th>
+            <th>endAdr</th>
+            <th>endTime</th>
+            <th>enddate</th>
+            <th>numberofcarsneed</th>
+            <th>typeofgoods</th>
+            <th>comments</th>
+          </tr>
+        </thead>
+        <tr v-for="booking in bookings">
+          <td>{{booking.ordNr}}</td>
+          <td>{{booking.startAdr}}</td>
+          <td>{{booking.startTime}}</td>
+          <td>{{booking.startDate}}</td>
+          <td>{{booking.endAdr}}</td>
+          <td>{{booking.endTime}}</td>
+          <td>{{booking.endDate}}</td>
+          <td>{{booking.numberOCN}}</td>
+          <td>{{booking.typeOfGoods}}</td>
+          <td>{{booking.comments}}</td>
+
+
         </tr>
-      </thead>
-      <tr v-for="booking in bookings">
-        <td>{{booking.ordNr}}</td>
-        <td>{{booking.startAdr}}</td>
-        <td>{{booking.startTime}}</td>
-        <td>{{booking.startDate}}</td>
-        <td>{{booking.endAdr}}</td>
-        <td>{{booking.endTime}}</td>
-        <td>{{booking.endDate}}</td>
-        <td>{{booking.numberOCN}}</td>
-        <td>{{booking.typeOfGoods}}</td>
-        <td>{{booking.comments}}</td>
-        
-     
-      </tr>
-    </table>
+      </table>
+    </div>
+
   </div>
-  
-</div>
   <script src="bundle.js"></script>
 </body>
 

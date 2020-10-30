@@ -41,14 +41,23 @@ header.style{
         height: 60px;
         background-color: green;
         margin-top: 10%;
-        margin-left: 43%;
+        text-align-last: center;
+       
+        
     
     }
+
+    .wrapper {
+      text-align: center;
+      
+  }
 
     button.MyBtnStyle3{
         width: 400px;
         height: 60pz;
         background-color: yellowgreen;
+        text-align: center;
+        
 
     }
     
@@ -143,8 +152,9 @@ header.style{
       }
 
       img.logo{
-        width: 250px;
-        height: 125px;
+        float: left;
+        width: 225px;
+        height: 100px;
       }
 
 

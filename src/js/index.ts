@@ -13,7 +13,7 @@ interface Ibooking {
     endAdr: string
     endTime: string
     endDate: string
-    numberOCN: string
+    numberOcn: string
     typeOfGoods: string
     comments: string
 
@@ -34,7 +34,7 @@ new Vue({
         endAdr:"",
         endTime:"",
         endDate:"",
-        numberOCN:"",
+        numberOcn:"",
         typeOfGoods:"",
         comments:"",
         bookings:[],
@@ -47,7 +47,7 @@ new Vue({
             endAdr:"",
             endTime:"",
             endDate:"",
-            numberOCN:"",
+            numberOcn:"",
             typeOfGoods:"",
             comments:"",},
         
