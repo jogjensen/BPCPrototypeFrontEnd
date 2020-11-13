@@ -2116,8 +2116,6 @@ new Vue({
                 alert(error.message);
             });
         },
-    },
-    CreateUser: function () {
     }
 });
 
