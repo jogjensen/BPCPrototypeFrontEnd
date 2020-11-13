@@ -2046,6 +2046,17 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./src/index.htm":
+/*!***********************!*\
+  !*** ./src/index.htm ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/file-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\jogje\\OneDrive\\BPC\\Endelig hjemmeside\\Fra github\\prototypeBPC\\src\\index.htm'");
+
+/***/ }),
+
 /***/ "./src/js/index.ts":
 /*!*************************!*\
   !*** ./src/js/index.ts ***!
@@ -2129,7 +2140,7 @@ new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-!(function webpackMissingModule() { var e = new Error("Cannot find module './src/index.htm'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+__webpack_require__(/*! ./src/index.htm */"./src/index.htm");
 module.exports = __webpack_require__(/*! ./src/js/index.ts */"./src/js/index.ts");
 
 
