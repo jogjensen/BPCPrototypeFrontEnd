@@ -2051,9 +2051,11 @@ process.umask = function() { return 0; };
   !*** ./src/index.htm ***!
   \***********************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/file-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\jogje\\OneDrive\\BPC\\Endelig hjemmeside\\Fra github\\prototypeBPC\\src\\index.htm'");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "index.htm");
 
 /***/ }),
 

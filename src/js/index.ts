@@ -11,7 +11,7 @@ interface Ibooking {
     startTime: string
     startDate: string
     endAdr: string
-    endTime: string
+    endTime: stringx
     endDate: string
     numberOcn: string
     typeOfGoods: string
