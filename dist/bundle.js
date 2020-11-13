@@ -2046,19 +2046,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "./src/index.htm":
-/*!***********************!*\
-  !*** ./src/index.htm ***!
-  \***********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "index.htm");
-
-/***/ }),
-
 /***/ "./src/js/index.ts":
 /*!*************************!*\
   !*** ./src/js/index.ts ***!
@@ -2129,6 +2116,8 @@ new Vue({
                 alert(error.message);
             });
         },
+    },
+    CreateUser: function () {
     }
 });
 
@@ -2142,7 +2131,7 @@ new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./src/index.htm */"./src/index.htm");
+!(function webpackMissingModule() { var e = new Error("Cannot find module './src/index.htm'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 module.exports = __webpack_require__(/*! ./src/js/index.ts */"./src/js/index.ts");
 
 
